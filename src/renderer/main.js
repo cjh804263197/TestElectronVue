@@ -13,8 +13,8 @@ Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 // LeanCloud初始化配置
-const appId = 'vzFy1xF3AKcUfoDver6ttJR0-gzGzoHsz'
-const appKey = '9B62Q1Ic2AA9uYScJcqzEDnT'
+const appId = ''
+const appKey = ''
 // 初始化LeanCloud存储模块
 AV.init({
   appId,

@@ -42,7 +42,9 @@
     components: { SystemInformation },
     data () {
       return {
-        isShow: false
+        isShow: false,
+        account: '',
+        password: ''
       }
     },
     methods: {
@@ -50,7 +52,7 @@
         this.$electron.shell.openExternal(link)
       },
       login () {
-        AV.User.logInWithMobilePhone('13503498930', '6B4308E762489D86FD98151FBB476D2E').then(result => {
+        AV.User.logInWithMobilePhone(this.account, this.password).then(result => {
           alert('登录成功')
           this.isShow = true
         }).catch(error => {
